@@ -27,7 +27,7 @@ def register_empresa(empresa: EmpresaCreate, db: Session = Depends(get_db), curr
     return {"msg": "Empresa Criada com Sucesso!", "company_id": new_empresa.id}
 
 
-# empresa_controller.py
+
 @router.put("/empresas/{empresa_id}", response_model=EmpresaResponse)
 def update_empresa(
     empresa_id: int,

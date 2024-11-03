@@ -1,4 +1,3 @@
-# backend/app/repositories/empresa_repository.py
 from sqlalchemy.orm import Session
 from ..models.empresa import Empresa
 

@@ -1,4 +1,3 @@
-// pages/index.tsx
 import React from 'react';
 import { useRouter } from 'next/router';
 import styles from '../styles/LoginForm.module.css';

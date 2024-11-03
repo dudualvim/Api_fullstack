@@ -1,4 +1,3 @@
-# backend/app/main.py
 from fastapi import FastAPI
 from .controllers import auth_controller, empresa_controller, usuario_controller, chat_controller
 from dotenv import load_dotenv

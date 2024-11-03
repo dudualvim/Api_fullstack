@@ -1,4 +1,3 @@
-# backend/app/controllers/chat_controller.py
 from fastapi import APIRouter, WebSocket, WebSocketDisconnect, Depends
 from sqlalchemy.orm import Session
 from ..db.database import get_db

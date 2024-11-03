@@ -22,5 +22,5 @@ class UserBasicResponse(UserBase):
 class UserResponse(UserBasicResponse):
     empresa: Optional["EmpresaBasicResponse"] = None
 
-# Import at the end to avoid circular imports
+
 from .empresa_schemas import EmpresaBasicResponse

@@ -1,6 +1,6 @@
 from pydantic import BaseModel, EmailStr
 from typing import Optional
-from app.core.enums import UserRole  # Importe UserRole do arquivo enums.py
+from app.core.enums import UserRole 
 
 class LoginSchema(BaseModel):
     email: EmailStr

@@ -25,11 +25,11 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
         throw new Error('Resposta Invalida do Server');
       }
   
-      // Store tokens
+      
       localStorage.setItem('token', response.access_token);
       localStorage.setItem('refresh_token', response.refresh_token);
   
-      // Decode token and check role
+
       const decoded = decodeJWT(response.access_token);
       console.log('Decoded token:', decoded);
   
@@ -40,7 +40,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
       setUserRole(decoded.role);
       setIsAuthenticated(true);
   
-      // Check role and redirect
+      // Confere a role do usuário e redireciona para a página correta
       if (decoded.role === 'superadmin') {
         await router.push('/superadmin');
       } else if (decoded.role === 'admin') {

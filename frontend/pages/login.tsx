@@ -1,4 +1,3 @@
-// pages/LoginPage.tsx
 import React, { useState, useEffect } from 'react';
 import LoginForm from '../components/auth/LoginForm';
 import RefreshTokenButton from '../components/auth/RefreshTokenButton';

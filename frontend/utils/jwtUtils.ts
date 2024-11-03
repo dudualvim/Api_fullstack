@@ -19,7 +19,7 @@ interface DecodedToken {
       );
   
       const decoded = JSON.parse(jsonPayload);
-      console.log('Decoded payload:', decoded); // Debug
+      console.log('Decoded payload:', decoded); 
       return decoded;
     } catch (error) {
       console.error("Erro ao decodificar o Token", error);

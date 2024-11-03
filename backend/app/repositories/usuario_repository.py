@@ -1,4 +1,3 @@
-# backend/app/repositories/usuario_repository.py
 from sqlalchemy.orm import Session
 from ..models.usuario import User
 from ..core.security import get_password_hash

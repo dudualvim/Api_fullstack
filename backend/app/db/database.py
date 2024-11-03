@@ -1,4 +1,3 @@
-# backend/app/db/database.py
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
@@ -14,7 +13,7 @@ if not SQLALCHEMY_DATABASE_URL:
 engine = create_engine(
     SQLALCHEMY_DATABASE_URL,
     pool_pre_ping=True,
-    echo=True  # This will log all SQL operations
+    echo=True  
 )
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 

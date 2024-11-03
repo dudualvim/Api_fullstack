@@ -1,4 +1,3 @@
-// RefreshTokenButton.tsx
 import React, { useState } from 'react';
 import axios from 'axios';
 import styles from '../../styles/SuperAdminPage.module.css';
@@ -14,12 +13,12 @@ const RefreshTokenButton = () => {
         throw new Error('Refresh token não encontrado');
       }
 
-      // Use URLSearchParams for query parameters
+
       const params = new URLSearchParams({ refresh_token: refreshToken });
 
       const response = await axios.post(
         `http://localhost:8000/auth/refresh-token?${params.toString()}`,
-        null, // No body needed, token is in query params
+        null, 
         {
           headers: {
             'Accept': 'application/json',

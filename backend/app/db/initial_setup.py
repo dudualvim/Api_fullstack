@@ -1,6 +1,5 @@
-# backend/app/db/initial_setup.py
 from app.db.database import SessionLocal, engine
-from app.models import Base, User  # Import from models package
+from app.models import Base, User 
 from app.core.security import get_password_hash
 from app.core.enums import UserRole
 import time
@@ -19,7 +18,7 @@ def create_initial_superadmin():
     print("Creating initial superadmin...")
     db = SessionLocal()
     try:
-        # Verify if superadmin exists
+        # Verifica se já existe um superadmin
         existing_superadmin = db.query(User).filter(User.role == UserRole.SUPERADMIN).first()
         if not existing_superadmin:
             superadmin = User(

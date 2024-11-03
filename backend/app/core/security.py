@@ -1,4 +1,3 @@
-# backend/app/core/security.py
 import logging
 from datetime import datetime, timedelta
 from passlib.context import CryptContext
@@ -73,7 +72,7 @@ def decode_token(token: str) -> TokenData:
                 detail="Token está faltando a reivindicação de tipo."
             )
 
-        # Validate expiration
+        # Expiração de token
         if not exp or datetime.fromtimestamp(exp) < datetime.utcnow():
             raise HTTPException(
                 status_code=status.HTTP_401_UNAUTHORIZED,

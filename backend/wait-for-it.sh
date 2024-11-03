@@ -1,4 +1,3 @@
-#!/usr/bin/env bash
 host="$1"
 port="$2"
 shift 2
