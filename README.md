@@ -120,17 +120,5 @@ Api_fullstack/
 
 - As principais funcionalidades incluem cadastro de empresas, criação de usuários, autenticação via JWT, e troca de mensagens entre operadores e admins.
 
-## 📢 Contribuindo
 
-Contribuições são bem-vindas! Siga os passos abaixo para contribuir:
-
-1. Faça um fork do projeto.
-2. Crie uma branch para sua feature ou correção de bug (`git checkout -b feature/nome_da_feature`).
-3. Faça commit das suas alterações (`git commit -m 'Adicionando nova feature'`).
-4. Faça push para a branch (`git push origin feature/nome_da_feature`).
-5. Abra um Pull Request.
-
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais informações.
 
